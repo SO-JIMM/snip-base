@@ -12,7 +12,7 @@ const publicDirectoryPath = path.join(__dirname, './public')
 const app = express()
 app.engine('.hbs', exphbs({extname: '.hbs'}))
 app.set('view engine', 'hbs')
-app.use(express.json())
+// app.use(express.json())
 app.use(express.static(publicDirectoryPath))
 app.use(appRouter)
 
